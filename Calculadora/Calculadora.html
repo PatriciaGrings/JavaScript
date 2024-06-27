@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <section>
+        <div id="num">
+            <button class="teclado" name="num" id="num0" onclick="numero(this.value)" value="0">0</button>
+            <button class="teclado" name="num" id="num1" onclick="numero(this.value)" value="1">1</button>            
+            <button class="teclado" name="num" id="num2" onclick="numero(this.value)" value="2">2</button>            
+            <button class="teclado" name="num" id="num3" onclick="numero(this.value)" value="3">3</button>            
+            <button class="teclado" name="num" id="num4" onclick="numero(this.value)" value="4">4</button>
+            <button class="teclado" name="num" id="num5" onclick="numero(this.value)" value="5">5</button>            
+            <button class="teclado" name="num" id="num6" onclick="numero(this.value)" value="6">6</button>
+            <button class="teclado" name="num" id="num7" onclick="numero(this.value)" value="7">7</button>            
+            <button class="teclado" name="num" id="num8" onclick="numero(this.value)" value="8">8</button>
+            <button class="teclado" name="num" id="num9" onclick="numero(this.value)" value="9">9</button>        
+        </div>
+        
+        <div id="operacao">
+            <button class="teclado" name="oper" id="opersoma" onclick="operacao(this.value)" value="+">+</button>
+            <button class="teclado" name="oper" id="opersub" onclick="operacao(this.value)" value="-">-</button>
+            <button class="teclado" name="oper" id="operdiv" onclick="operacao(this.value)" value="/">/</button>
+            <button class="teclado" name="oper" id="opermult" onclick="operacao(this.value)" value="*">x</button>
+            <button class="teclado" name="oper" id="operigual" onclick="operacao(this.value)" value="==">=</button>   
+        </div>
+
+        <div>
+            <output name="visor" id="visor"> </output>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Patricia Grings</p>
+    </footer>
+    <script src="script.js">  </script>
+</body>
+</html>
